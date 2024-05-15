@@ -1,8 +1,11 @@
 # Home Networking Project
 
-## Objective
+## Problem
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+The old topology consisted of the standard home setup of a Netgear modem and router. There were issues where the router would receive occasional pings from companies and misread them as DOS attacks which caused a temporary disruption in internet conectivity. Netgear's router software does not provide any options to modify the firewall's sensitivity which led to the following solution.
+
+## Solution
+A new router was purchased from Netgate that came with pfsense pre-installed. Pfsense is more versatile than retail firewall/router software and provides a lot of customization to tailor network security to the specific situation. In addition, a network swtich was purchased to integrate the new equipment. The old Netgear router would be repurposed as a wireless access point.
 
 ### Skills Learned
 
@@ -12,11 +15,19 @@ The Detection Lab project aimed to establish a controlled environment for simula
 - Enhanced knowledge of network protocols and security vulnerabilities.
 - Development of critical thinking and problem-solving skills in cybersecurity.
 
-### Tools Used
+### Tools & Equipment Used
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+- Pfsense 
+- Network switch
+- Modem
+- Router
+
+## Objectives
+
+1. Install the new Netgate router
+2. Configure pfsense and modify rules to secure the network
+3. Install the network switch
+4. Repurpose the old router as a wireless access point
 
 ## Steps
 drag & drop screenshots here or use imgur and reference them using imgsrc
